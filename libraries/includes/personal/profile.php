@@ -344,11 +344,12 @@ if ($form -> isSubmitted() && $form -> validate()) {
 		$vLab_course_urlEncoded 		= rawurlencode($vLab_course);
 		$vLab_resourceType_urlEncoded 	= rawurlencode($vLab_resourceType);
 
-		// $vLab_moodleURL = "http://localhost/moodle19";
-		$vLab_moodleURL = "http://ita-portal.cis.fiu.edu";
+		$vLab_moodleURL = VLAB_LMS_ROOT;
+		// $vLab_moodleURL = "http://localhost/moodle19/";
+		// $vLab_moodleURL = "http://ita-portal.cis.fiu.edu/";
 
 		// auto register	
-		$str = $vLab_moodleURL . "/mod/deva/embedded/auto-register.php?efront=1&username=$vLab_username_urlEncoded&password=$vLab_password_urlEncoded&email=$vLab_email_urlEncoded&firstname=$vLab_firstname_urlEncoded&lastname=$vLab_lastname_urlEncoded&timezone=$vLab_timezone_urlEncoded&companyname=$vLab_companyname_urlEncoded";	
+		$str = $vLab_moodleURL . "mod/deva/embedded/auto-register.php?efront=1&username=$vLab_username_urlEncoded&password=$vLab_password_urlEncoded&email=$vLab_email_urlEncoded&firstname=$vLab_firstname_urlEncoded&lastname=$vLab_lastname_urlEncoded&timezone=$vLab_timezone_urlEncoded&companyname=$vLab_companyname_urlEncoded";	
 		// echo $str . '<br>';
 		$payload = file_get_contents($str);
 		// echo $payload;
@@ -381,20 +382,20 @@ if ($form -> isSubmitted() && $form -> validate()) {
 		
 		if (in_array($roleTypeName, $vLabEnabledState)) {	
 			// auto enroll
-			$str = $vLab_moodleURL . "/mod/deva/embedded/auto-enroll.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
+			$str = $vLab_moodleURL . "mod/deva/embedded/auto-enroll.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
 			// echo $str . '<br>';
 			$payload = file_get_contents($str);
 			// echo $payload;
 		
 			// auto login
-			$str = $vLab_moodleURL . "/mod/deva/embedded/auto-login.php?username=$vLab_username_urlEncoded";	
+			$str = $vLab_moodleURL . "mod/deva/embedded/auto-login.php?username=$vLab_username_urlEncoded";	
 			// echo $str . '<br>';
 			$payload = file_get_contents($str);
 			// echo $payload;
 			// End addition by Masoud Sadjadi
 			
 			// auto start vLab
-			$str = $vLab_moodleURL . "/mod/deva/embedded/auto-start.php?username=$vLab_username_urlEncoded&course=$vLab_course_urlEncoded&resourceType=$vLab_resourceType_urlEncoded";
+			$str = $vLab_moodleURL . "mod/deva/embedded/auto-start.php?username=$vLab_username_urlEncoded&course=$vLab_course_urlEncoded&resourceType=$vLab_resourceType_urlEncoded";
 			// echo $str;
 			$payload = file_get_contents($str);
 		}
@@ -410,12 +411,12 @@ if ($form -> isSubmitted() && $form -> validate()) {
 			// Beging addition
 			if (in_array($roleTypeName, $vLabSuspendState)) {
 				// Suspend vLab
-				$str = $vLab_moodleURL . "/mod/deva/embedded/suspend.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";
+				$str = $vLab_moodleURL . "mod/deva/embedded/suspend.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";
 				// echo $str;
 				$payload = file_get_contents($str);
 			} else if (in_array($roleTypeName, $vLabDisabledState)) {
 				// auto enroll
-				$str = $vLab_moodleURL . "/mod/deva/embedded/auto-unenroll.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
+				$str = $vLab_moodleURL . "mod/deva/embedded/auto-unenroll.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
 				// echo $str . '<br>';
 				$payload = file_get_contents($str);
 				// echo $payload;		
