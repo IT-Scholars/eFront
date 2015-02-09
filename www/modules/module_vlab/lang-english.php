@@ -1,5 +1,5 @@
 <?php
-define("_MODULE_VLAB_MODULEVLAB", "Virtual Lab R8");
+define("_MODULE_VLAB_MODULEVLAB", "Virtual Lab");
 define("_MODULE_VLAB_BRANCHVLABTAB", "Virtual Lab Branch Tab");
 define("_MODULE_VLAB_COURSESETTINGSTABPAGE", "Virtual Lab course settings tab page");
 define("_MODULE_VLAB_LESSONPROGRESSFIELDSET", "Virtual Lab fieldset");

@@ -1,5 +1,5 @@
 <?php
-define("_MODULE_CERT_MODULECERT", "Certificate Test R8");
+define("_MODULE_CERT_MODULECERT", "Certificate Test");
 define("_MODULE_CERT_BRANCHCERTTAB", "Certificate Test Branch Tab");
 define("_MODULE_CERT_COURSESETTINGSTABPAGE", "Certificate Test course settings tab page");
 define("_MODULE_CERT_LESSONPROGRESSFIELDSET", "Certificate Test fieldset");

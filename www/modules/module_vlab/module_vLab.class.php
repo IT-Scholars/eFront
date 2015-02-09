@@ -231,6 +231,7 @@ class module_vLab extends EfrontModule {
 		} else {
 			$vLabURL = $baseURL . "KU-poweredby-ITS-NotAvailable.html";
 		}
+			// $vLabURL = $baseURL . "KU-poweredby-ITS-NotAvailable-Outage.html";
 				
 		/*
 		$password = "test1234";
