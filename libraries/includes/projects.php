@@ -163,7 +163,7 @@ if (isset($_GET['delete_project']) && in_array($_GET['delete_project'], array_ke
     $form -> addRule('title', _THEFIELD.' "'._TITLE.'" '._ISMANDATORY, 'required', null, 'client');
     $form -> addRule('title', _INVALIDFIELDDATA, 'checkParameter', 'text');
 
-    $form -> addElement('checkbox', 'auto_assign', _AUTOASSIGNTONEWUSERS, null, 'class = "inputCheckBox"');
+    $form -> addElement('checkbox', 'auto_assign', _AUTOASSIGNTONEWUSERS, null, 'class = "inputCheckBox" checked = "true"');
     $form -> addElement('textarea', 'data', _PROJECTDATA, 'id="editor_project_data" class = "inputProjectTextarea mceEditor" style = "width:100%;height:30em;"');
 
     if (isset($_GET['edit_project'])) {

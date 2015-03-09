@@ -84,7 +84,7 @@ define("_MORE","more");
 define("_DELETE","Delete");
 define("_MESSAGES"," Messages");
 define("_THEORY","Theory");
-define("_PROJECTS","Projects");
+define("_PROJECTS","Turn in Assignment Here");
 define("_TESTS","Tests");
 define("_PREVIOUS","Previous");
 define("_NEXT","Next");
