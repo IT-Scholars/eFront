@@ -98,8 +98,12 @@ include_once $path."configuration.php";
 <?php if ($kcaGranted[$roleTypeName]) { ?>
   <h3>Kaseya Certified Administrator (KCA)</h3>
   <div>
-    <p>
-This certificate exam has 100 points. You must receive a score of <strong>90 or higher</strong> to pass the exam. The exam is comprised of two parts, <em>theory (30 points) </em>and <em>hands-on (70 points)</em>. 
+    <p><strong>Schedule Your Kaseya University Certification Exam<br>
+    </strong>	</p>
+    <ul>
+      <li>When you are prepared to take your hands-on exam, please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam.   Hands-on exams are generally scheduled between 9:00AM and 4:00 PM US Eastern Standard Time.  If this time zone will not work for you, please specify a preferred time, including your time zone, in your ticket and we will do our best to accommodate.  Please allow two hours to take the hands-on exam.  We highly recommend doing some exercises in the vLab environment prior to attempting the exam to ensure familiarity with the environment.  The theory portion of the exam can be taken at any time without a pre-scheduled appointment. </li>
+    </ul>
+<p>This certificate exam has 100 points. You must receive a score of <strong>90 or higher</strong> to pass the exam. The exam is comprised of two parts, <em>theory (30 points) </em>and <em>hands-on (70 points)</em>. 
 <ul>
   <li>For the <a href="<?php echo $baseURL . $kcaTheoryURL; ?>">theory part</a>, you will receive 30 randomly selected multiple-choice or true-false questions that evaluate your familiarity with Kaseya VSA. You have 30 minutes to answer all of the questions. For this part, you have unlimited number of attempts. This means that you can retake the theory test over and over again until you get the perfect score, if desired. Your score will be provided to you immediately after taking the test. The score for this part comprises <strong>30%</strong> of your total score.</li>
   <li>For the <a href="<?php echo $baseURL . $kcaHandsonURL; ?>">hands-on part</a>, you will receive 19 randomly selected tasks from all major topics in your training that you would need to perform within two hours using a blank virtual environment. You have one attempt at the hands-on exam. Once the exam is completed, submit the answer file for grading. Your answer file will be graded typically no longer than 10 business days (two weeks) from the time you took the test. The score for this part comprises<strong> 70% </strong>of your total score.</li>
@@ -115,6 +119,11 @@ This certificate exam has 100 points. You must receive a score of <strong>90 or 
 <?php if ($kctGranted[$roleTypeName]) { ?>
   <h3>Kaseya Certified Technician (KCT)</h3>
   <div>
+    <p><strong>Schedule Your Kaseya University Certification Exam<br>
+    </strong></p>
+    <ul>
+      <li>When you are prepared to take your hands-on exam, please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam.   Hands-on exams are generally scheduled between 9:00AM and 4:00 PM US Eastern Standard Time.  If this time zone will not work for you, please specify a preferred time, including your time zone, in your ticket and we will do our best to accommodate.  Please allow two hours to take the hands-on exam.  We highly recommend doing some exercises in the vLab environment prior to attempting the exam to ensure familiarity with the environment.  The theory portion of the exam can be taken at any time without a pre-scheduled appointment. </li>
+    </ul>
     <p>This certificate exam has 100 points. You must receive a score of <strong>90 or higher</strong> to pass the exam. The exam is comprised of two parts, <em>theory (30 points) </em>and <em>hands-on (70 points)</em>. </p>
     <ul>
       <li>For the <a href="<?php echo $baseURL . $kctTheoryURL; ?>">theory part</a>, you will receive 30 randomly selected multiple-choice or true-false questions that evaluate your familiarity with Kaseya VSA. You have 30 minutes to answer all of the questions. For this part, you have unlimited number of attempts. This means that you can retake the theory test over and over again until you get the perfect score, if desired. Your score will be provided to you immediately after taking the test. The score for this part comprises <strong>30%</strong> of your total score.</li>
