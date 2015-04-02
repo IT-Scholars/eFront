@@ -101,7 +101,7 @@ include_once $path."configuration.php";
     <strong>Schedule Hands-On Exam<br>
     </strong>	
     <ul>
-      <li>Please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam.   Include your preferred date, time, and time zone.  Hands-on exams are generally scheduled between 9:00 AM and 4:00 PM US Eastern Time. If you need to schedule your exam outside of these hours, we will do our best to accommodate.  We highly recommend doing some exercises in the Vitual Lab environment prior to attempting the exam to ensure familiarity with the vLab environment and navigation.</li>
+      <li>Please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam. Include your preferred date, time, and time zone. Hands-on exams are generally scheduled between 9:00 AM and 4:00 PM US Eastern Time. If you need to schedule your exam outside of these hours, we will do our best to accommodate. We highly recommend completing some exercises in the Virtual Lab environment prior to attempting the exam to ensure familiarity with the vLab environment and navigation.</li>
       <li>The theory portion of the exam can be taken at any time without a pre-scheduled appointment.</li>
     </ul>
 <p>This certificate exam has 100 points. You must receive a score of <strong>90 or higher</strong> to pass the exam. The exam is comprised of two parts, <em>theory (30 points) </em>and <em>hands-on (70 points)</em>. 
@@ -122,7 +122,7 @@ include_once $path."configuration.php";
   <div>
     <strong>Schedule Hands-On Exam</strong>
     <ul>
-      <li>Please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam.   Include your preferred date, time, and time zone.  Hands-on exams are generally scheduled between 9:00 AM and 4:00 PM US Eastern Time. If you need to schedule your exam outside of these hours, we will do our best to accommodate.  We highly recommend doing some exercises in the Vitual Lab environment prior to attempting the exam to ensure familiarity with the vLab environment and navigation.</li>
+      <li>Please submit a ticket at helpdesk.kaseya.com at least 1-2 days prior to when you would like to take the hands-on exam. Include your preferred date, time, and time zone. Hands-on exams are generally scheduled between 9:00 AM and 4:00 PM US Eastern Time. If you need to schedule your exam outside of these hours, we will do our best to accommodate. We highly recommend completing some exercises in the Virtual Lab environment prior to attempting the exam to ensure familiarity with the vLab environment and navigation.</li>
       <li>The theory portion of the exam can be taken at any time without a pre-scheduled appointment.</li>
     </ul>
     <p>This certificate exam has 100 points. You must receive a score of <strong>90 or higher</strong> to pass the exam. The exam is comprised of two parts, <em>theory (30 points) </em>and <em>hands-on (70 points)</em>. </p>
