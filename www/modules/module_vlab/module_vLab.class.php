@@ -252,16 +252,89 @@ class module_vLab extends EfrontModule {
 		*/
 	
 		$str = "
-			<div align=\"center\">
+			<script type='text/javascript'>
+			    /*
+				var BROWSER = {IE:0, CHROME:1, SAFARI:2, MOZILLA:3, OPERA:4}; 
+
+			    function getBrowserType() {
+
+					// Is this a version of IE?
+					if($.browser.msie){
+						return BROWSER.IE;
+					}
+
+					// Is this a version of Chrome?
+					if($.browser.chrome){
+						return BROWSER.CHROME;
+					}
+
+					// Is this a version of Safari?
+					if($.browser.safari){
+						return BROWSER.SAFARI;
+					}
+
+					// Is this a version of Mozilla?
+					if($.browser.mozilla){
+						return BROWSER.MOZILLA
+					}
+
+					// Is this a version of Opera?
+					if($.browser.opera){
+						return BROWSER.OPERA;
+					}
+	
+				}
+				*/
+				
+				function getHeight() {
+				    // var browserType = getBrowserType();
+				    // console.log(browserType);
+	
+			    	var myWidth = 0, myHeight = 0;
+			    	if( typeof( window.innerWidth ) == 'number' ) {
+					    //Non-IE
+					    myWidth = window.innerWidth;
+					    myHeight = window.innerHeight;
+				    } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+					    //IE 6+ in 'standards compliant mode'
+					    myWidth = document.documentElement.clientWidth;
+					    myHeight = document.documentElement.clientHeight;
+				    } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+					    //IE 4 compatible
+					    myWidth = document.body.clientWidth;
+					    myHeight = document.body.clientHeight;
+				    }
+			        
+					console.log( 'Parent - Width = ' + myWidth );
+			        console.log( 'Parent - Height = ' + myHeight );
+
+			    	return myHeight;
+			    }
+                
+				function iframeLoaded() {
+					console.log('Parent - hi');
+                    var iFrameID = document.getElementById('parentIFrame');
+                    if(iFrameID) {
+                        // here you can make the height, I delete it first, then I make it again
+                        iFrameID.height = '';
+                        iFrameID.height = getHeight(); // iFrameID.contentWindow.document.body.scrollHeight + 'px';
+						console.log('Parent - iFrameID.height: ' + iFrameID.height);
+                    }
+					console.log('bye');   
+                }
+            </script>  
+			<div align='center'>
 				<iframe 
-					src=\"$vLabURL\"
-					align=\"middle\" 
-    				height=1000
+				    id='parentIFrame'
+					onload='iframeLoaded()'
+					src='$vLabURL'
+					align='middle' 
     				width=100%
     				marginwidth=0
     				marginheight=0 >
 				</iframe>
-			</div>";
+			</div>
+	";
 
 		return $str;
 			
